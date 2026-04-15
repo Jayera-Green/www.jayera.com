@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="JAYERA: AI-powered agroforestry MRV platform empowering smallholder farmers to access carbon markets globally. Verified carbon credits, transparent monitoring, sustainable livelihoods."/>
+  <meta name="keywords" content="agroforestry, carbon credits, smallholder farmers, MRV, climate tech, sustainable agriculture, carbon markets, AI monitoring"/>
+  <meta name="author" content="JAYERA Green Innovation"/>
+  <meta property="og:title" content="JAYERA | Empowering Farmers, Restoring Earth"/>
+  <meta property="og:description" content="Join the global movement connecting small farmers to carbon markets through AI-powered agroforestry monitoring."/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#2d5a2d"/>
+  <title>JAYERA | Empowering Farmers, Restoring Earth 🌱</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+     <a href="#" class="logo" aria-label="JAYERA Home" onclick="showPage('home'); return false;">
+  <div class="logo-icon">
+    <i class="fas fa-leaf" aria-hidden="true"></i>
+  </div>
+  <span>JAYERA</span>
+      
+      <div class="nav-links">
+        <a onclick="showPage('home')" class="nav-link active" data-page="home">Home</a>
+        <a onclick="showPage('about')" class="nav-link" data-page="about">About</a>
+        <a onclick="showPage('solutions')" class="nav-link" data-page="solutions">Solutions</a>
+        <a onclick="showPage('impact')" class="nav-link" data-page="impact">Impact</a>
+        <a onclick="showPage('dashboard')" class="nav-link" data-page="dashboard">Dashboard</a>
+        
+        <div class="nav-actions">
+          <div class="lang-selector">
+            <button class="lang-btn" aria-label="Select language">
+              <i class="fas fa-globe"></i>
+              <span>EN</span>
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+            </button>
+            <div class="lang-dropdown">
+              <div class="lang-option active" onclick="changeLanguage('en')">
+                <i class="fas fa-flag-usa"></i> English
+              </div>
+              <div class="lang-option" onclick="changeLanguage('es')">
+                <i class="fas fa-flag"></i> ಕನ್ನಡ
+              </div>
+              <div class="lang-option" onclick="changeLanguage('fr')">
+                <i class="fas fa-flag"></i> தமிழ்
+              </div>
+              <div class="lang-option" onclick="changeLanguage('pt')">
+                <i class="fas fa-flag"></i> മലയാളം
+              </div>
+              <div class="lang-option" onclick="changeLanguage('hi')">
+                <i class="fas fa-flag"></i> हिन्दी
+              </div>
+              <div class="lang-option" onclick="changeLanguage('sw')">
+                <i class="fas fa-flag"></i> తెలుగు
+              </div>
+            </div>
+          </div>
+          
+          <a onclick="showPage('getstarted')" class="btn btn-primary">Get Started</a>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="floating-element">
+        <i class="fas fa-tree" style="font-size: 3rem; color: rgba(255,255,255,0.3);"></i>
+      </div>
+      <div class="floating-element">
+        <i class="fas fa-cloud" style="font-size: 2.5rem; color: rgba(255,255,255,0.25);"></i>
+      </div>
+      <div class="floating-element">
+        <i class="fas fa-seedling" style="font-size: 2rem; color: rgba(255,255,255,0.35);"></i>
+      </div>
+      
+      <div class="hero-content" data-aos="fade-up">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i>
+          <span>🌍 ** *** Certified • *** Compliant</span>
+        </div>
+        
+        <h1>Empowering Small Farmers to Access Global Carbon Markets</h1>
+        
+        <p class="text-lg">
+          JAYERA connects smallholder farmers worldwide with transparent, AI-powered agroforestry monitoring—turning sustainable land management into verified carbon credits and lasting income.
+        </p>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-white btn-large" onclick="showPage('getstarted')">
+            <i class="fas fa-rocket"></i> Start Your Journey
+          </button>
+          <button class="btn btn-outline-white btn-large" onclick="showPage('solutions')">
+            <i class="fas fa-play-circle"></i> See How It Works
+          </button>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">10+</span>
+            <span class="hero-stat-label">Farmers Enrolled</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">600</span>
+            <span class="hero-stat-label">Trees Monitored</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">1K t</span>
+            <span class="hero-stat-label">CO₂ Verified</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual"></div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="partners-section">
+      <div class="partners-grid">
+        <div class="partner-logo"><i class="fas fa-university"></i> *** Bank</div>
+        <div class="partner-logo"><i class="fas fa-globe-americas"></i> ***P</div>
+        <div class="partner-logo"><i class="fas fa-leaf"></i> *** Verified</div>
+        <div class="partner-logo"><i class="fas fa-chart-line"></i> *** </div>
+        <div class="partner-logo"><i class="fas fa-satellite"></i> *** Partnership</div>
+      </div>
+      <div class="certifications">
+        <div class="cert-badge"><i class="fas fa-check-circle"></i> *** Certified</div>
+        <div class="cert-badge"><i class="fas fa-check-circle"></i> ***  Compliant</div>
+        <div class="cert-badge"><i class="fas fa-check-circle"></i> Blockchain Audited</div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="badge badge-primary"><i class="fas fa-bolt"></i> Why JAYERA</span>
+          <h2>Smart. Scalable. Sustainable.</h2>
+          <p>Our platform combines cutting-edge technology with deep agricultural expertise to create real impact.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <h3>AI-Powered Monitoring</h3>
+            <p>Satellite imagery + drone surveys + computer vision automatically count trees, measure growth, and detect changes—no manual surveys needed.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>Verified Carbon Accounting</h3>
+            <p>IPCC-compliant allometric equations calculate carbon sequestration with ±8% uncertainty—trusted by registries worldwide.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Farmers First Mobile App</h3>
+            <p>Offline-capable app in 15+ languages lets farmers report activities, receive payments, and access training—no smartphone required.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3>Direct Payment System</h3>
+            <p>Smart contracts ensure 85%+ of carbon revenue reaches farmers directly via mobile money, bank transfer, or local cooperatives.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Transparent & Auditable</h3>
+            <p>Every data point is timestamped, geotagged, and stored on immutable ledgers—full traceability for buyers and regulators.</p>
+          </div>
+          
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="feature-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Biodiversity Co-Benefits</h3>
+            <p>Our agroforestry models enhance soil health, water retention, and habitat—creating resilience beyond carbon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="badge badge-accent"><i class="fas fa-cogs"></i> Simple Process</span>
+          <h2>From Farm to Carbon Credit in 4 Steps</h2>
+          <p>We handle the complexity so farmers can focus on what they do best: growing sustainably.</p>
+        </div>
+        
+        <div class="steps-container">
+          <div class="steps-grid">
+            <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="step-number">1</div>
+              <div class="step-icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <h3>Register & Map</h3>
+              <p>Farmers enroll via app or local partner. GPS boundaries are mapped and baseline data collected.</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="step-number">2</div>
+              <div class="step-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>AI Monitoring</h3>
+              <p>Satellite + drone imagery analyzes tree growth monthly. Farmers verify via simple photo uploads.</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="step-number">3</div>
+              <div class="step-icon">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <h3>Verification & Issuance</h3>
+              <p>Third-party validators review data. Verified credits are issued on blockchain registries.</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="step-number">4</div>
+              <div class="step-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <h3>Get Paid</h3>
+              <p>Carbon credits sold to corporations. Revenue distributed directly to farmers within 72 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Dashboard Preview -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="badge badge-primary"><i class="fas fa-chart-pie"></i> Real Impact</span>
+          <h2>See Your Impact in Real-Time</h2>
+          <p>Transparent dashboards for farmers, buyers, and communities—because trust requires visibility.</p>
+        </div>
+        
+        <div class="dashboard-preview" data-aos="fade-up">
+          <div class="dashboard-header">
+            <div class="flex items-center gap-4">
+              <div class="logo-icon" style="width: 36px; height: 36px; font-size: 1rem;">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <span style="font-weight: 600;">JAYERA Dashboard</span>
+            </div>
+            <div class="badge badge-success">
+              <i class="fas fa-check"></i> Live Data
+            </div>
+          </div>
+          
+          <div class="dashboard-stats">
+            <div class="dashboard-stat">
+              <div class="dashboard-stat-value">9</div>
+              <div class="dashboard-stat-label">Active Farmers</div>
+            </div>
+            <div class="dashboard-stat">
+              <div class="dashboard-stat-value">99.9K</div>
+              <div class="dashboard-stat-label">Trees Growing</div>
+            </div>
+            <div class="dashboard-stat">
+              <div class="dashboard-stat-value">9.9K t</div>
+              <div class="dashboard-stat-label">CO₂ This Year</div>
+            </div>
+            <div class="dashboard-stat">
+              <div class="dashboard-stat-value">$0.01K</div>
+              <div class="dashboard-stat-label">Paid to Farmers</div>
+            </div>
+          </div>
+          
+          <div class="dashboard-main">
+            <div>
+              <div class="card-header">
+                <h3 style="font-size: 1.1rem;"><i class="fas fa-map-marked-alt"></i> Project Map</h3>
+              </div>
+              <div class="dashboard-map">
+                <i class="fas fa-map"></i>
+              </div>
+              <div style="padding: 1rem; display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray);">
+                <span><i class="fas fa-location-dot"></i> Karnataka, India</span>
+                <span><i class="fas fa-sync"></i> Updated 2h ago</span>
+              </div>
+            </div>
+            
+            <div>
+              <div class="card-header">
+                <h3 style="font-size: 1.1rem;"><i class="fas fa-user"></i> Featured Farmer</h3>
+              </div>
+              <div class="dashboard-farmer">
+                <div class="farmer-avatar">PK</div>
+                <div>
+                  <h4 style="margin: 0;">Pradeep K </h4>
+                  <p style="margin: 0.25rem 0; font-size: 0.9rem; color: var(--gray);">Agroforestry, 2 ha</p>
+                  <div style="display: flex; gap: 0.5rem; font-size: 0.85rem;">
+                    <span class="badge badge-success">✓ Verified</span>
+                    <span style="color: var(--primary); font-weight: 600;">$1 earned</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div style="margin-top: 1.5rem; padding: 1rem; background: var(--light); border-radius: var(--radius-sm);">
+                <h4 style="margin-bottom: 0.75rem; font-size: 1rem;">This Month's Impact</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.9rem;">
+                  <div>
+                    <div style="color: var(--gray);">Trees Planted</div>
+                    <div style="font-weight: 600;">300</div>
+                  </div>
+                  <div>
+                    <div style="color: var(--gray);">CO₂ Captured</div>
+                    <div style="font-weight: 600;">+0.o1 t</div>
+                  </div>
+                  <div>
+                    <div style="color: var(--gray);">Water Saved</div>
+                    <div style="font-weight: 600;">+09K L</div>
+                  </div>
+                  <div>
+                    <div style="color: var(--gray);">Income Generated</div>
+                    <div style="font-weight: 600; color: var(--success);">+$0.1</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <button class="btn btn-primary btn-large" onclick="showPage('dashboard')">
+            <i class="fas fa-tachometer-alt"></i> Explore Full Dashboard
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="badge badge-accent"><i class="fas fa-quote-left"></i> Voices of Change</span>
+          <h2>Trusted by Farmers & Partners Worldwide</h2>
+          <p>Real stories from the communities we serve and the organizations we collaborate with.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-content">"Before JAYERA, I didn't know my trees could earn money. Now I get paid every month for growing sustainably. My children can stay in school."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div class="author-info">
+                <h4>Rajesh Kumar</h4>
+                <p>Smallholder Farmer • Karnataka, India</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-content">"JAYERA's transparent MRV system gives us confidence that our carbon investments create real, measurable impact. The data quality is exceptional."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MS</div>
+              <div class="author-info">
+                <h4>Maria Silva</h4>
+                <p>Sustainability Director • Global Tech Corp</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-content">"As a local NGO, JAYERA's mobile app and training materials empower our field teams to support hundreds of farmers efficiently and transparently."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4>Amara Keita</h4>
+                <p>Program Manager • Green Futures Africa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Metrics -->
+    <section class="section section-bg-gradient">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="badge badge-primary" style="background: rgba(255,255,255,0.2); color: white;">
+            <i class="fas fa-globe"></i> Global Impact
+          </span>
+          <h2 style="color: white;">Measurable Change at Scale</h2>
+          <p style="color: rgba(255,255,255,0.9);">Our collective action is creating lasting environmental and social impact.</p>
+        </div>
+        
+        <div class="impact-grid">
+          <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="impact-value">9K</div>
+            <div class="impact-label">Farmers Empowered</div>
+            <div class="impact-description">Across ** countries</div>
+          </div>
+          <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="impact-value">300</div>
+            <div class="impact-label">Trees Planted</div>
+            <div class="impact-description">Native & climate-resilient species</div>
+          </div>
+          <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="impact-value">0.01M t</div>
+            <div class="impact-label">CO₂ Sequestered</div>
+            <div class="impact-description">Verified & tradable credits</div>
+          </div>
+          <div class="impact-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="impact-value">$0.01M</div>
+            <div class="impact-label">Paid to Communities</div>
+            <div class="impact-description">Direct income for sustainable practices</div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <a href="#" class="btn btn-outline-white btn-large">
+            <i class="fas fa-download"></i> Download Impact Report 2026
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Ready to Grow a Greener Future Together?</h2>
+        <p>Whether you're a farmer, investor, corporation, or government partner—there's a place for you in the JAYERA ecosystem.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-white btn-large" onclick="showPage('getstarted')">
+            <i class="fas fa-user-plus"></i> Join as a Farmer
+          </button>
+          <button class="btn btn-outline-white btn-large" onclick="showPage('contact')">
+            <i class="fas fa-handshake"></i> Partner With Us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <span>JAYERA</span>
+          </div>
+          <p>Empowering smallholder farmers to lead the climate solution through transparent, technology-enabled agroforestry.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('solutions')">Solutions</a></li>
+            <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">API Documentation</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">Farmer Training</a></li>
+            <li><a href="#">Carbon Methodology</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li><a href="#">Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 JAYERA Green Innovation •
+          <a href="#">Privacy Policy</a> •
+          <a href="#">Terms of Service</a> •
+          <a href="#">Cookie Settings</a> •
+          <a href="#" onclick="showPage('contact')">Contact Us</a>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">
+          <i class="fas fa-shield-alt"></i> ** 2 Type II Certified • **  Compliant • Carbon Negative Operations
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Placeholder for other pages (about, solutions, impact, etc.) -->
+  <!-- Add these sections following the same pattern as the home page -->
+
+  <!-- External Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
